@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>marcos — curriculo</title>
+  <style>
+    /* esquema Matrix neon green */
+    :root{ --bg:#000; --fg:#39ff14; --accent:#29ff6e; --muted:#063; --info:#9f0 }
+    html,body{height:100%;margin:0;background:radial-gradient(ellipse at top, rgba(0,40,0,0.15), #000 60%);color:var(--fg);font-family: "Courier New", Courier, monospace}
+    .wrap{max-width:1200px;margin:18px auto;padding:18px}
+    .terminal{background:transparent;border-radius:4px;padding:16px;border:1px solid rgba(57,255,20,0.06);box-shadow:0 8px 40px rgba(0,255,0,0.03)}
+    pre{white-space:pre-wrap;margin:0;font-size:13px;line-height:1.18;color:var(--fg);text-shadow:0 0 6px rgba(57,255,20,0.35),0 0 18px rgba(57,255,20,0.12)}
+    .header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+    .links{color:var(--accent)}
+    a{color:var(--accent);text-decoration:none}
+    .prompt::before{content:"*marcos$ ";color:var(--fg);text-shadow:0 0 8px rgba(57,255,20,0.9)}
+    /* cursor piscante estilo terminal */
+    .prompt::after{content:" ";display:inline-block;width:8px;height:14px;background:var(--fg);margin-left:6px;vertical-align:middle;animation:blink 1s steps(1) infinite;box-shadow:0 0 8px rgba(57,255,20,0.8)}
+    @keyframes blink{50%{opacity:0}} 
+    .mutt{color:var(--info)}
+    footer{margin-top:10px;color:var(--muted);font-size:12px}
+    @media (max-width:720px){ pre{font-size:12px} }
+
+    /* Estilos para a arte ASCII e conteúdo do currículo */
+    .ascii-wrap{ display:flex; justify-content:center; }
+    .ascii {
+      text-align: center;
+      /* fonte responsiva: mínimo 10px, ideal relativo à viewport e máximo 20px */
+      font-size: clamp(10px, 1.8vw, 20px);
+      line-height: 1.08;
+      margin: 8px auto 18px;
+      max-width: 92%;
+      width: 880px; /* largura máxima para grandes telas */
+      overflow:auto; /* evita quebras indesejadas */
+      padding: 6px 8px;
+      box-sizing: border-box;
+      white-space: pre; /* preserva o espaçamento do ASCII */
+    }
+
+    .shell {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="terminal" role="region" aria-label="Terminal de currículo">
+      <div class="header">
+        <div class="mutt">GNU/Linux (marcos.local) (ttyp1)</div>
+        <div class="links"><a href="https://www.linkedin.com/in/marcos-barbosa-54b302184/" target="_blank" rel="noopener">LinkedIn</a> - <a href="https://github.com/Excannor" target="_blank" rel="noopener">GitHub</a> - E-mail: <a href="mailto:marcos.estevaobs@gmail.com">marcos.estevaobs@gmail.com</a></div>
+      </div>
+
+      <pre>
+Last login: Tue Dec 16 20:05:00 2025 from 201.12.121.26
+      </pre>
+
+      <!-- ASCII art reduzida e centralizada -->
+      <div class="ascii-wrap">
+      <pre class="ascii" aria-hidden="false">
+############################################################################################################################################
+############################################################################################################################################
+############################################################################################################################################
+############################################################################################################################################
+######################################..##  --##############################################################################################
+##################################..  ##        ..##########################################################################################
+##################################  mm##          ##########################################################################################
+##################################  ####          ##########################################################################################
+################################mm      ######    ##########################################################################################
+################################        ########  mm########################################################################################
+##############################  @@######            --######################################################################################
+##########################  ++##########                ..##################################################################################
+######################    ##############                      ##############################################################################
+##################    ########++....                              ##########################################################################
+##############mm  --++      ..++  ..############    ##mm..            MM####################################################################
+############        ++########        ####::##    ..##############++      ::################################################################
+########mm    ++############        --  MM          --################@@      ##############################################################
+######      ++############@@      ..##      ####      ##########@@::    ::##################################################################
+######@@++        ..mm######        ##  ##  mmMM      MM++..    ..mm########################################################################
+##################@@mm..              @@####          mmMM##################################################################################
+############################        mm########--      ######################################################################################
+############################################################################################################################################
+######@@                                                                ####################################################################
+######                                                                  @@##################################################################
+######      ####@@@@@@@@@@##mm::##@@@@@@@@@@@@@@  ##@@@@@@@@@@@@@@      ++########  ------------::##  --------------##@@..------------@@####
+######      ##            ..mm::--                ##                    ++########MM################  ################--####################
+######      ##            ..mm::################  ################      ++########mm............--##  ..............##--####################
+######      ##            --mm::--                ##                    ++######################  ##  ################--####################
+######      MM##############--::::                ##                    ++########              ######              ####              MM####
+######                                                                  @@##################################################################
+######MM                                                                ####################################################################
+##########@@@@@@@@@@@@@@@@@@@@@@@@@@@@MMMM@@@@@@@@@@@@@@@@MMMMMMMM@@########################################################################
+############################################################################################################################################
+############################################################################################################################################
+############################################################################################################################################
+
+        Marcos Barbosa
+
+LinkedIn - GitHub - E-mail: marcos.estevaobs@gmail.com
+----------------------------------------------------------------------
+      </pre>
+      </div>
+
+      <pre class="shell">
+Marcos Barbosa
+
+LinkedIn - GitHub - E-mail: marcos.estevaobs@gmail.com
+----------------------------------------------------------------------
+
+Today's MOTD:
+Para ajuda digite: <span class="cmd-run" data-cmd="help">cat help.txt</span>
+Para ver o currículo digite: <span class="cmd-run" data-cmd="curriculo">cat curriculo.txt</span>
+
+*marcos$ <span class="cmd-run" data-cmd="curriculo">cat curriculo.txt</span>
+
+Nome: Marcos Estevão de Sousa Barbosa
+Idade: 25 anos
+Estado civil: Solteiro
+Nacionalidade: Brasileiro
+
+Objetivo:
+Atuar na área de Resposta a Incidentes, Análise de Malware, Threat Hunting e Arquitetura de Segurança.
+
+Formação Acadêmica:
+Centro Universitário UNA
+Curso: Análise e Desenvolvimento de Sistemas
+Status: Cursando 3º período
+Previsão de conclusão: Dezembro/2024
+
+Certificados Técnicos:
+- CCNA – Cisco
+- Network Security – Cisco
+- Malware Analysis and Introduction to Assembly Language
+- Applied Threat Hunting – EC-COUNCIL
+- Malware Analysis – Lets Defend
+- Architecting with Google Compute Engine – Google Cloud
+- Apex One – Trend Micro (Technical Track)
+- IBM MaaS360 Deployment
+- Mastering Threat Intelligence – EC-COUNCIL
+- Pentest Mobile – Desec
+- MAD20 Threat Hunting Fundamentals Badge
+
+Certificações Profissionais:
+- Cortex XDR – PSE Engineer
+- MAAS360 – Administrator
+- MITRE ATT&CK Fundamentals Certification
+- DCPT – Em andamento
+- DFE — Digital Forensics Essentials — Em andamento
+- MITRE ATT&CK — SOC Assessment — Em andamento
+
+Habilidades Técnicas:
+- Idiomas: Inglês (intermediário), Russo (básico)
+- Sistemas Operacionais: Windows, Linux, Android
+- Protocolos de rede: TCP/IP, BGP, OSPF
+- Ferramentas: Zabbix, Grafana, Mikrotik, OLT Think
+- Planejamento e Deploy de Ferramentas de Segurança
+- Arquitetura de Segurança para ambientes corporativos e em nuvem
+- Gestão de Projetos de Segurança da Informação
+
+Experiência Profissional:
+NTT DATA — Analista de Segurança da Informação
+Jul/2024 – Atual
+- Suporte técnico em soluções: Trend Micro, Cortex XDR, Qualys, FireMon, Forescout
+- Planejamento e execução de projetos de segurança
+- Arquitetura de soluções de proteção de endpoints e rede
+- Deploy e integração de ferramentas de monitoramento e resposta
+
+Montreal Informática — Analista de Segurança da Informação
+Jul/2022 – Jun/2024
+- Implementação e gestão de segurança de endpoints
+- Especialista em Apex One, Vision One, Deep Security, Cloud App Security, Fortinet EMS, Qradar
+- Análise de malware e modelagem de ameaças
+- Engenharia de detecções e threat hunting
+- Participação em projetos de arquitetura de segurança e integração de soluções SIEM/XDR
+
+iT.eam Consultoria — Consultor de Segurança da Informação
+Mar/2022 – Jul/2022
+- Suporte em MDM (MaaS360), Endpoint Security e SIEM (IBM Qradar)
+- Planejamento de ambientes seguros para clientes corporativos
+- Deploy de soluções de segurança e treinamento técnico
+
+iT.eam Consultoria — Estagiário em Managed Security Services
+Out/2021 – Mar/2022
+- Suporte em MDM e Endpoint Security
+- Apoio em projetos de segurança e documentação técnica
+
+Sempre Internet — Analista de Atendimento Jr (NOC Nível I)
+Jun/2021 – Ago/2021
+- Atendimento corporativo interno
+- Monitoramento de redes e configuração de equipamentos
+- Apoio na arquitetura de rede e segurança de infraestrutura
+
+Experiência em Projetos:
+- Integração de Cortex XDR com SIEM Qradar para detecção avançada de ameaças
+- Arquitetura e deploy de ambiente seguro com Trend Micro Vision One e Deep Security
+- Planejamento de infraestrutura de segurança para ambientes híbridos (on-premises e cloud)
+- Desenvolvimento de playbooks de resposta a incidentes e threat hunting
+- Migração de soluções MDM com IBM MaaS360
+
+*marcos$ 
+      </pre>
+
+      <!-- conteúdos que serão exibidos ao executar os comandos (mantidos escondidos) -->
+      <pre id="helpContent" style="display:none">HELP(1)		HELP SHELL WEBSITE
+
+NAME
+help.txt - Ajuda básica sobre navegação neste Website
+
+DESCRIPTION
+Este website foi feito utilizando o BSDday Shell. Use os comandos listados para navegar.
+
+COMANDOS
+ls, echo, clear, cat, cd, whoami, exit, help, rm, cp, touch
+
+-- fim do arquivo --</pre>
+
+      <pre id="curriculoContent" style="display:none">*marcos$ cat curriculo.txt
+
+Nome: Marcos Estevão de Sousa Barbosa
+Idade: 25 anos
+Estado civil: Solteiro
+Nacionalidade: Brasileiro
+
+Objetivo:
+Atuar na área de Resposta a Incidentes, Análise de Malware, Threat Hunting e Arquitetura de Segurança.
+
+Formação Acadêmica:
+Centro Universitário UNA
+Curso: Análise e Desenvolvimento de Sistemas
+Status: Cursando 3º período
+Previsão de conclusão: Dezembro/2024
+
+(Certificados Técnicos, Certificações, Habilidades e Experiência mantidos conforme o conteúdo original)
+
+-- fim do arquivo --</pre>
+
+      <script>
+        (function(){
+          const pre = document.querySelector('.terminal > pre');
+          const originalText = pre.innerText; // mantém a arte ASCII
+
+          function showContent(id){
+            const content = document.getElementById(id);
+            if(!content) return;
+            pre.innerText = content.innerText;
+          }
+
+          document.querySelectorAll('.cmd-run').forEach(el=>{
+            el.style.cursor = 'pointer';
+            el.addEventListener('click', function(e){
+              const cmd = this.dataset.cmd;
+              if(cmd === 'help') showContent('helpContent');
+              else if(cmd === 'curriculo') showContent('curriculoContent');
+              else if(cmd === 'blog') window.open('https://example.com/blog','_blank');
+            });
+          });
+
+          // clique para restaurar (duplo clique em área vazia do terminal)
+          document.querySelector('.terminal').addEventListener('dblclick', ()=>{ pre.innerText = originalText });
+        })();
+      </script>
+    </div>
+  </div>
+</body>
+</html>
